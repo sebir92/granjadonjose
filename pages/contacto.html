@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/iconogranja.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Granja Don Jose - Contacto</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><img class="logogranja" src="../assets/img/logogranja.jpeg" alt="logo de la granja" width="100"></a>
+        <h1 class="tituloprincipal">Productores de Huevos</h1>
+
+        <a class="abajo" href="#pie">Ir hasta abajo</a>
+        
+        <nav class="menunavegador">
+            <ul>
+                <li> 
+                    <a href="../index.html">Home</a>
+                </li>
+                <li> 
+                    <a href="../pages/galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="../pages/productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="../pages/precios.html">Precios</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulodepagina">Contactenos</h1>
+
+    <form action="procesar.php" method="">
+        
+        <section class="flex-container">
+            <fieldset class="flex-item1">
+            <p>
+            <label for="nombre">Nombre y Apellido: </label>
+            <input type="text" name="nombre" placeholder="Ingresa tu Nombre y Apellido">
+            </p>
+
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="Email" required placeholder="Ingresa tu Email">
+            </p>
+            
+            <p>
+                <label for="telefono">Telefono de Contacto: </label>
+                <input type="tel" name="telefono" placeholder="Ingresa tu Telefono">
+            </p>
+            <p>
+                <label for="comentario">Mensaje: </label>
+                <input type="text" name="comentario" placeholder="Escriba aqui su mensaje">
+            </p>
+            
+
+            <!--Checkbox-->
+            <div>
+                <label for="enviar-notificaciones">Recibir noticias de la granja</label>
+                
+                <input type="checkbox" name="enviar-notificaciones" value="Recibir noticias de la granja">
+            </div>
+
+            <!--Button-->
+            <p> <input type="submit" value="Enviar"> </p>
+            <p> <input type="reset" value="Limpiar Formulario"> </p>
+            </fieldset>
+            <div class="maps">
+                <iframe class="flex-item2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.2511819835404!2d-65.44985068515473!3d-27.20320021193342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3130dbe85071bd9!2zMjfCsDEyJzExLjUiUyA2NcKwMjYnNTEuNiJX!5e1!3m2!1ses-419!2sar!4v1647062634341!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+
+                <p class="flex-item3">Ruta 325, km 5.5 / Monteros / Tucuman</p>
+            </div>
+        </section>
+    <br>
+    <br>
+
+
+    <br>
+    <br>
+
+    </form>
+
+    <footer id="pie">
+        <div class="divfb">
+            <a href="https://facebook.com" target="_blank"> <img class="imgredes" src="../assets/img/redessociales/facebook(1).png">
+        </div>
+
+        <div class="divins">    
+            <a href="https://instagram.com" target="_blank"> <img class="imgredes" src="../assets/img/redessociales/instagram.png">
+        </div>
+
+        <div class="divyt">
+            <a href="https://youtube.com" target="_blank"> <img class="imgredes" src="../assets/img/redessociales/youtube.png"> </a>
+        </div>
+        
+        <div class="derechosres">
+            <p>©Todos los derechos reservados. 2022</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
