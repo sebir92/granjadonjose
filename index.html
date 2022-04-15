@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <title>Granja Don Jose</title>
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img class="logogranja" src="./assets/img/logogranja.jpeg" alt="logo de la granja" width="100"></a>
-        <h1 class="tituloprincipal">Productores de Huevos</h1>
+        <!-- <a href="index.html"><img class="logogranja" src="./assets/img/logogranja.jpeg" alt="logo de la granja" width="100"></a>
+        <h1 class="tituloprincipal">Productores de Huevos</h1> -->
         
-        <a class="abajo" href="#pie">Ir hasta abajo</a>
-        <nav class="menunavegador">
+        <!-- <nav class="menunavegador">
             <ul>
                 <li>
                     <a href="./index.html">Home</a>
@@ -36,45 +38,102 @@
                     <a href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <div> <a class="navbar-brand" href="#"> <img src="./assets/img/logogranja.jpeg" alt="" width="30" height="35"></a>
+
+            </div>
+                <div class="d-flex flex-row-reverse bd-highlight">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse p-2 bd-highlight" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/precios.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
     </header>
 
     <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner m-auto">
+              <div class="carousel-item active wimg">
+                <img src="./assets/img/carrusel1.jpg" class="d-block w-100" alt="imagencarrusel">
+              </div>
+              <div class="carousel-item wimg">
+                <img src="./assets/img/carrusel2.jpg" class="d-block w-100" alt="imagencarrusel">
+              </div>
+              <div class="carousel-item wimg">
+                <img src="./assets/img/carrusel3.jpg" class="d-block w-100" alt="imagencarrusel">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
         <section class="main">
             <article class="noticias">
-                <h2 class="titulodepagina">Novedades</h2>
+                <h2 class="titulodepagina text-dark">Novedades</h2>
                     
                     <p class="homep1"> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem id laudantium quis facere recusandae necessitatibus quia, dignissimos pariatur corporis harum est aspernatur voluptates nam qui hic officia eaque maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis repellendus voluptate a itaque. Explicabo ab aliquid exercitationem aliquam quibusdam ducimus dolores eligendi quisquam aspernatur similique est ex, error ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, adipisci fuga? Provident non labore reiciendis consectetur, incidunt totam quae. In, perspiciatis corporis? Fugit dolor recusandae numquam accusamus, totam sequi culpa.</p>
 
                     <p class="homep2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci modi distinctio sint aperiam libero deserunt similique eveniet! Officia fugit at cupiditate, nihil pariatur corporis. Officiis dignissimos cumque ducimus alias deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel nostrum explicabo ipsam, voluptatum perspiciatis recusandae amet illum excepturi esse, omnis voluptate modi molestias! Cumque placeat earum mollitia nulla ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi nemo neque, officia excepturi quae eius nisi quod saepe corporis corrupti. Tempora provident hic nisi distinctio. Ratione, quasi saepe. Cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non magni ut atque, ducimus corporis optio fugit necessitatibus sapiente velit labore repudiandae laboriosam rerum quisquam aliquam quaerat esse earum! Tenetur, asperiores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio temporibus dolorem quas sunt tempora. Numquam obcaecati quod officia magni atque doloribus autem tenetur ipsa ea voluptatibus! Placeat minus id tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, aliquam laborum. Incidunt impedit iure, non recusandae ex maiores cum, veritatis ipsum quidem quo sint adipisci provident repellendus enim, pariatur tempora?</p>
             </article>
         </section>
-        <p>subi esto a github</p>
+
         </main>
 
-    <aside class="sidebar">
+    <aside class="sidebar p-3 mb-2 bg-secondary .bg-gradient text-dark">
         <h3>Te puede interesar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem reiciendis doloremque labore. Accusantium officiis autem quas fuga. Fugit, commodi saepe est incidunt alias quidem aspernatur eum labore quas itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum quod temporibus quisquam doloribus soluta totam, distinctio explicabo iure</p>
     </aside>
 
-
     <footer id="pie">
         <div class="divfb">
-            <a href="https://facebook.com" target="_blank"> <img class="imgredes" src="../assets/img/redessociales/facebook(1).png">
+            <a href="https://facebook.com" target="_blank"> <img class="imgredes" src="./assets/img/redessociales/facebook(1).png">
         </div>
 
         <div class="divins">    
-            <a href="https://instagram.com" target="_blank"> <img class="imgredes" src="../assets/img/redessociales/instagram.png">
+            <a href="https://instagram.com" target="_blank"> <img class="imgredes" src="./assets/img/redessociales/instagram.png">
         </div>
 
         <div class="divyt">
-            <a href="https://youtube.com" target="_blank"> <img class="imgredes" src="../assets/img/redessociales/youtube.png"> </a>
+            <a href="https://youtube.com" target="_blank"> <img class="imgredes" src="./assets/img/redessociales/youtube.png"> </a>
         </div>
         
         <div class="derechosres">
             <p>©Todos los derechos reservados. 2022/2026</p>
         </div>
-    </footer>
+      </footer>
 
 </body>
 </html>
